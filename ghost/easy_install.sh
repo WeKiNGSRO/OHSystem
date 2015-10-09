@@ -9,6 +9,7 @@ cd ../../
 make
 cd ../
 mkdir bot
+mkdir plugins
 cp src/ghost++ bot/
 cp config/* bot -R
 cp plugins bot/ -R 
