@@ -4265,7 +4265,7 @@ bool CGame :: EventPlayerBotCommand( CGamePlayer *player, string command, string
                         //remove the target
                         VotesNeeded--;
                         SendAllChat(m_GHost->m_Language->UserStartedVoteMute( player->GetName(), LastMatch->GetName() ) );
-                        SendAllChat( UserStartedVoteMuteVotesNeeded( TeamString, UTIL_ToString(VotesNeeded) ) );
+                        SendAllChat(m_GHost->m_Language->UserStartedVoteMuteVotesNeeded( TeamString, UTIL_ToString(VotesNeeded) ) );
                         SendAllChat( m_GHost->m_Language->UserStartedVoteMuteVoteExpire(UTIL_ToString(m_GHost->m_VoteMuteTime) ) );
                         m_MuteType = 0;
                     } else {
